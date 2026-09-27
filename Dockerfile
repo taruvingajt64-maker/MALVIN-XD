@@ -4,7 +4,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         ffmpeg \
         ca-certificates \
-        curl && \
+        curl \
+        git && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
